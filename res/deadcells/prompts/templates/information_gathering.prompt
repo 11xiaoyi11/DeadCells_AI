@@ -1,0 +1,51 @@
+Assume you are a helpful AI assistant integrated with 'Dead Cells' on the PC, equipped to handle a wide range of combat and exploration tasks in this roguelike-metroidvania game. Your advanced capabilities enable you to process and interpret gameplay screenshots and other relevant information.
+
+<$image_introduction$>
+
+Current task:
+<$task_description$>
+
+Description: Please analyze and describe the screenshot image in detail and then provide an overall image description. Pay attention to anything related to the current task. Focus on the combat situation, environmental hazards, available paths, and interactive elements. Note the player character's position and the state of nearby enemies.
+
+Character_status: Identify and report the character's health (shown as red cells at the bottom left), available health flasks (flask icons), and any active status effects (buffs/debuffs shown as icons above the health bar).
+
+Equipment: Note the currently equipped weapons and skills shown at the bottom of the screen, including their types and any visible cooldown status.
+
+Resources: Report on visible resources including gold (coin icon), cells (blue cell icon), and any scrolls or blueprint counts displayed.
+
+Enemy_information: Identify all visible enemies, their types (if recognizable), approximate positions relative to the player, and their apparent health status or attack patterns.
+
+Environmental_elements: Describe relevant environmental features including platforms, ladders, spikes, traps, doors (normal, timed, or locked), teleporters, shops, food items, and any special interactive objects.
+
+Combat_alerts: If there are some in-game combat alerts or warnings (such as "elite enemy detected" notifications, curse counters, or timed door countdowns), extract this information, otherwise, only output "null".
+
+Map_status: Identify which biome the player is in based on the visual style, and if the map is open, describe the revealed areas and potential paths forward. If no map is visible, output "null".
+
+Other: Other relevant information that does not belong to the above categories. If none applies, only output "null".
+
+You should only respond in the format described below and not output comments or other information.
+Description:
+The image shows...
+Character_status:
+Health: X/Y
+Flasks: Z/W
+Status effects: [list if present]
+Equipment:
+Primary weapon: [weapon type]
+Secondary weapon: [weapon type]
+Skills: [skill 1, skill 2]
+Resources:
+Gold: X
+Cells: Y
+Other resources: [if visible]
+Enemy_information:
+[Type]: [position], [status]
+[Type]: [position], [status]
+Environmental_elements:
+[List of relevant environmental features and their locations]
+Combat_alerts:
+[Any visible alerts or null]
+Map_status:
+[Current biome and map information or null]
+Other:
+[Other relevant information or null]

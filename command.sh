@@ -1,0 +1,1 @@
+python runner.py --envConfig "./conf/env_config_deadcells.json"

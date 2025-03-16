@@ -1,0 +1,118 @@
+{
+    "env_name": "Dead Cells",
+    "sub_path": "deadcells",
+    "env_short_name": "deadcells",
+    "is_game": true,
+    "skill_registry_name": "cradle.environment.DeadCells.skill_registry.DeadCellsSkillRegistry",
+    "ui_control_name": "cradle.environment.DeadCells.ui_control.DeadCellsUIControl",
+    "task_description_list": [
+        {
+            "id": 1,
+            "task_description": "Control a warrior to survive and escape procedurally generated dungeons.    Prioritize dodging enemy attacks using rolls and parries while maintaining attack combos;    Plan optimal routes through platforming sections to reach the map exit within 300 seconds;    Manage health flasks and temporary buffs to sustain combat efficiency;    Collect weapons/scrolls to progressively strengthen character builds;    Allocate stat upgrades between brutality/tactics/survival to optimize damage scaling.",
+            "sub_task_description_list": []
+        }
+    ],
+    "skill_configs": {
+        "skill_mode": "Basic",
+        "skill_names_basic": [
+            "move_left",
+            "move_right",
+            "jump",
+            "crouch",
+            "roll",
+            "jumpDown",
+            "wall_jump",
+            "climb_ladder_up",
+            "climb_ladder_down",
+            "weapon1",
+            "weapon2",
+            "skill1",
+            "skill2",
+            "ground_slam",
+            "air_attack",
+            "interact",
+            "teleport",
+            "collect",
+            "health",
+            "switch_item",
+            "dodge_and_attack",
+            "jump_attack_combo"
+        ],
+        "skill_names_movement": [],
+        "skill_names_map": [],
+        "skill_names_trade": [],
+        "skill_names_deny": [],
+        "skill_names_allow": []
+    },
+    "provider_configs": {
+        "coordinates_provider": {
+            "raw_coordinates": {
+                "line_type": {},
+                "max_line_id": 0,
+                "point_type": {
+                    "highway_entry-001": [
+                        1710,
+                        190
+                    ],
+                    "highway_exit-001": [
+                        1710,
+                        245
+                    ]
+                },
+                "max_point_id": 1
+            }
+        },
+        "augment_provider": {
+            "draw_axis": true,
+            "draw_mask_panel": true,
+            "mask_panel_config": {},
+            "axis_config": {
+                "crop_region": [
+                    0,
+                    0,
+                    1920,
+                    960
+                ],
+                "axis_division": [
+                    3,
+                    5
+                ],
+                "axis_linewidth": 5,
+                "axis_color": "yellow",
+                "font_color": "yellow",
+                "font_size": 50,
+                "scale_length": 20
+            },
+            "draw_grid": true,
+            "grid_config": {
+                "crop_region": [
+                    0,
+                    0,
+                    1920,
+                    960
+                ],
+                "axis_division": [
+                    3,
+                    5
+                ],
+                "axis_linewidth": 3,
+                "axis_color": "red",
+                "font_color": "white",
+                "font_size": 50
+            }
+        },
+        "information_gathering_provider": {
+            "template_path": "./res/deadcells/prompts/templates/information_gathering.prompt"
+        },
+        "self_reflection_provider": {
+            "template_path": "./res/deadcells/prompts/templates/self_reflection.prompt"
+        },
+        "task_inference_provider": {
+            "template_path": "./res/deadcells/prompts/templates/task_inference.prompt",
+            "use_subtask": true
+        },
+        "action_planning_provider": {
+            "template_path": "./res/deadcells/prompts/templates/action_planning.prompt"
+        }
+    }
+}
